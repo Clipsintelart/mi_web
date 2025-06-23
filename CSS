@@ -1,0 +1,290 @@
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #eee;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px 15px;
+}
+
+/* --- HEADER --- */
+header {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 20px 30px;
+  background: rgba(255 255 255 / 0.05);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00ffd5;
+  text-shadow: 0 0 10px #00ffd5aa, 0 0 20px #00ffd5bb;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- NAV --- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+nav ul li a {
+  color: #00ffd5;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: inset 0 0 0 0 #00ffd5;
+  border: 2px solid transparent;
+  display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background: #00ffd5;
+  color: #0b1e21;
+  border-color: #00ffd5;
+  box-shadow: 0 0 15px #00ffd5;
+  cursor: pointer;
+}
+
+/* --- SECTIONS inside nav --- */
+nav section {
+  background: rgba(255 255 255 / 0.1);
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-top: 25px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 0.3);
+  color: #d4f1f9;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+nav section h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #00ffd5;
+  text-shadow: 0 0 12px #00ffd5cc;
+  border-left: 6px solid #00ffd5;
+  padding-left: 12px;
+}
+
+nav section article {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0 255 213 / 0.3);
+}
+
+nav section article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #a0fff9;
+  font-weight: 700;
+  text-shadow: 0 0 6px #00ffd5cc;
+}
+
+nav section article p {
+  margin-bottom: 12px;
+  color: #c9f9f7dd;
+}
+
+/* --- Listas dentro de artículos --- */
+nav section ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+nav section ul li {
+  background: rgba(0 255 213 / 0.15);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgb(0 255 213 / 0.15);
+  flex: 1 1 320px;
+  padding: 12px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  transition: background 0.3s ease;
+}
+
+nav section ul li:hover {
+  background: rgba(0 255 213 / 0.35);
+  box-shadow: 0 8px 25px rgb(0 255 213 / 0.5);
+  cursor: pointer;
+}
+
+nav section ul li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 10px #00ffd5aa;
+  flex-shrink: 0;
+}
+
+nav section ul li p {
+  color: #d9ffff;
+  font-size: 1rem;
+  flex: 1;
+  line-height: 1.3;
+}
+
+/* --- MAIN DESTACADO --- */
+main {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 15px;
+}
+
+.destacado {
+  background: linear-gradient(135deg, #00ffd5dd, #005f73dd);
+  border-radius: 25px;
+  padding: 35px 40px;
+  box-shadow: 0 12px 40px rgb(0 255 213 / 0.7);
+  color: #003034;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: transform 0.4s ease;
+}
+
+.destacado:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 55px rgb(0 255 213 / 0.9);
+}
+
+.destacado h2 {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+  text-shadow: 0 0 10px #001f23aa;
+}
+
+.destacado p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #002525;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- CARDS COCHES --- */
+.car {
+  background: rgba(0 255 213 / 0.1);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgb(0 255 213 / 0.3);
+  margin-bottom: 30px;
+  display: flex;
+  gap: 25px;
+  padding: 20px 25px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 45px rgb(0 255 213 / 0.7);
+  cursor: pointer;
+}
+
+.car img {
+  width: 200px;
+  height: 130px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00ffd5aa;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.car:hover img {
+  transform: scale(1.07);
+}
+
+.info h2 {
+  font-size: 1.8rem;
+  color: #00ffd5;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px #00ffd5cc;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: #c9ffffcc;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+  nav section ul {
+    flex-direction: column;
+  }
+  .car {
+    flex-direction: column;
+    text-align: center;
+  }
+  .car img {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  .destacado h2 {
+    font-size: 2rem;
+  }
+  .destacado p {
+    font-size: 1rem;
+  }
+  .info h2 {
+    font-size: 1.3rem;
+  }
+}
